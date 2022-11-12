@@ -3,7 +3,8 @@ version: 0.1
 phases:
   install:
     commands:
-      - apt-get install npm
+      - curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+      - sudo apt-get install -y nodejs
       - printenv
       - rm -rf node_modules
       - npm install
